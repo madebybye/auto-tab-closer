@@ -193,3 +193,13 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ---
 
 **Auto Tab Closer** - Making your browsing experience cleaner, one launcher tab at a time.
+
+## Quick Start
+
+1. **Build in Xcode**: Open the project and build for your target platform
+2. **Install Extension**: The extension will be available in Safari
+3. **Visit Launcher Pages**: Go to Zoom meetings, Figma files, etc.
+4. **Automatic Detection**: Extension detects launcher pages and starts countdown
+5. **User Choice**: Let it auto-close or click 'Keep Tab Open'
+
+## Quick Start
