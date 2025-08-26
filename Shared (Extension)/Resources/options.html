@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Tab Closer - Options</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 16px;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #333;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+
+        .setting-group {
+            margin-bottom: 24px;
+        }
+
+        .setting-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #555;
+        }
+
+        .setting-group input[type="text"],
+        .setting-group input[type="number"],
+        .setting-group select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.2s;
+        }
+
+        .setting-group input:focus,
+        .setting-group select:focus {
+            outline: none;
+            border-color: #007aff;
+            box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 12px;
+            transform: scale(1.2);
+        }
+
+        .checkbox-group label {
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+
+        .domain-config {
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        .domain-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .domain-name {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .domain-toggle {
+            display: flex;
+            align-items: center;
+        }
+
+        .domain-toggle input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        .domain-patterns {
+            margin-top: 12px;
+        }
+
+        .pattern-input {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .pattern-input input {
+            flex: 1;
+        }
+
+        .pattern-input button {
+            padding: 6px 12px;
+            background: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .add-pattern {
+            margin-top: 8px;
+        }
+
+        .add-pattern button {
+            padding: 6px 12px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .actions {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin: 0 8px;
+        }
+
+        .btn-primary {
+            background: #007aff;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #0056cc;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #545b62;
+        }
+
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #c82333;
+        }
+
+        .status {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Auto Tab Closer</h1>
+            <p>Advanced Settings & Configuration</p>
+        </div>
+
+        <div class="content">
+            <div id="status" class="status" style="display: none;"></div>
+
+            <div class="section">
+                <h2>General Settings</h2>
+                
+                <div class="setting-group">
+                    <label for="enabled">Enable Auto Tab Closing</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="enabled" checked>
+                        <label for="enabled">Automatically close launcher tabs</label>
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <label for="countdownSeconds">Default Countdown (seconds)</label>
+                    <input type="number" id="countdownSeconds" min="3" max="60" value="6">
+                </div>
+
+                <div class="setting-group">
+                    <label for="checkDelay">Page Check Delay (milliseconds)</label>
+                    <input type="number" id="checkDelay" min="500" max="5000" value="1000" step="100">
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Domain Configuration</h2>
+                <p>Configure which domains and patterns to watch for launcher pages.</p>
+                
+                <div id="domainConfigs">
+                    <!-- Domain configurations will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Advanced Options</h2>
+                
+                <div class="setting-group">
+                    <label for="logLevel">Logging Level</label>
+                    <select id="logLevel">
+                        <option value="none">None</option>
+                        <option value="error">Errors Only</option>
+                        <option value="warn">Warnings</option>
+                        <option value="info">Info</option>
+                        <option value="debug">Debug</option>
+                    </select>
+                </div>
+
+                <div class="setting-group">
+                    <label for="maxTabsPerDay">Maximum Tabs Closed Per Day</label>
+                    <input type="number" id="maxTabsPerDay" min="0" max="100" value="0">
+                    <small>0 = unlimited</small>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="showNotifications">
+                    <label for="showNotifications">Show desktop notifications when tabs are closed</label>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="rememberUserChoices">
+                    <label for="rememberUserChoices">Remember user choices for specific domains</label>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button class="btn btn-primary" id="saveBtn">Save Settings</button>
+                <button class="btn btn-secondary" id="resetBtn">Reset to Defaults</button>
+                <button class="btn btn-danger" id="exportBtn">Export Settings</button>
+                <button class="btn btn-secondary" id="importBtn">Import Settings</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Tab Closer</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <div class="header">
+            <div class="logo">
+                <span class="icon">⏰</span>
+                <h1>Auto Tab Closer</h1>
+            </div>
+            <div class="status">
+                <span class="status-label">Status:</span>
+                <span class="status-value" id="statusValue">Enabled</span>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="toggle-section">
+                <label class="toggle-label">
+                    <input type="checkbox" id="enabledToggle" checked>
+                    <span class="toggle-slider"></span>
+                    <span class="toggle-text">Enable Auto Tab Closing</span>
+                </label>
+            </div>
+
+            <div class="settings-section">
+                <h3>Settings</h3>
+                
+                <div class="setting-item">
+                    <label for="countdownInput">Countdown (seconds):</label>
+                    <input type="number" id="countdownInput" min="3" max="30" value="6">
+                </div>
+
+                <div class="setting-item">
+                    <label for="domainSelect">Watched Domains:</label>
+                    <div class="domain-list" id="domainList">
+                        <!-- Domains will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-section">
+                <h3>Statistics</h3>
+                <div class="stat-item">
+                    <span class="stat-label">Tabs closed today:</span>
+                    <span class="stat-value" id="tabsClosedToday">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Total tabs closed:</span>
+                    <span class="stat-value" id="totalTabsClosed">0</span>
+                </div>
+            </div>
+
+            <div class="actions-section">
+                <button id="pauseAllBtn" class="action-btn secondary">Pause All Timers</button>
+                <button id="resetStatsBtn" class="action-btn secondary">Reset Statistics</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="version">v1.0.0</div>
+            <div class="links">
+                <a href="#" id="helpLink">Help</a>
+                <a href="#" id="feedbackLink">Feedback</a>
+                <a href="#" id="optionsLink">Options</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

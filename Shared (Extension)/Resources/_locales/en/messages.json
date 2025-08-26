@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "Auto Tab Closer",
+        "description": "The display name for the extension."
+    },
+    "extension_description": {
+        "message": "Automatically closes tabs that are only used to launch native apps (like Zoom or Figma) after they become useless.",
+        "description": "Description of what the extension does."
+    }
+}

@@ -1,0 +1,907 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6134AF12E5DFBE8000D37C1 /* Auto Tab Closer Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B6134AF02E5DFBE8000D37C1 /* Auto Tab Closer Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B6134AFB2E5DFBE8000D37C1 /* Auto Tab Closer Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B6134AFA2E5DFBE8000D37C1 /* Auto Tab Closer Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6134AF22E5DFBE8000D37C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6134AB62E5DFBE7000D37C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6134AEF2E5DFBE8000D37C1;
+			remoteInfo = "Auto Tab Closer Extension (iOS)";
+		};
+		B6134AFC2E5DFBE8000D37C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6134AB62E5DFBE7000D37C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6134AF92E5DFBE8000D37C1;
+			remoteInfo = "Auto Tab Closer Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B6134B242E5DFBE8000D37C1 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B6134AF12E5DFBE8000D37C1 /* Auto Tab Closer Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6134B2E2E5DFBE8000D37C1 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B6134AFB2E5DFBE8000D37C1 /* Auto Tab Closer Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B6134AD22E5DFBE8000D37C1 /* Auto Tab Closer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Auto Tab Closer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6134AE42E5DFBE8000D37C1 /* Auto Tab Closer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Auto Tab Closer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6134AF02E5DFBE8000D37C1 /* Auto Tab Closer Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Auto Tab Closer Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6134AFA2E5DFBE8000D37C1 /* Auto Tab Closer Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Auto Tab Closer Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B6134B1F2E5DFBE8000D37C1 /* Exceptions for "Shared (App)" folder in "Auto Tab Closer (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: Resources/Main.html",
+				Assets.xcassets,
+				Resources/Icon.png,
+				Resources/Script.js,
+				Resources/Style.css,
+				ViewController.swift,
+			);
+			target = B6134AD12E5DFBE8000D37C1 /* Auto Tab Closer (iOS) */;
+		};
+		B6134B232E5DFBE8000D37C1 /* Exceptions for "iOS (Extension)" folder in "Auto Tab Closer Extension (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B6134AEF2E5DFBE8000D37C1 /* Auto Tab Closer Extension (iOS) */;
+		};
+		B6134B282E5DFBE8000D37C1 /* Exceptions for "iOS (App)" folder in "Auto Tab Closer (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B6134AD12E5DFBE8000D37C1 /* Auto Tab Closer (iOS) */;
+		};
+		B6134B292E5DFBE8000D37C1 /* Exceptions for "Shared (App)" folder in "Auto Tab Closer (macOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: Resources/Main.html",
+				Assets.xcassets,
+				Resources/Icon.png,
+				Resources/Script.js,
+				Resources/Style.css,
+				ViewController.swift,
+			);
+			target = B6134AE32E5DFBE8000D37C1 /* Auto Tab Closer (macOS) */;
+		};
+		B6134B2D2E5DFBE8000D37C1 /* Exceptions for "macOS (Extension)" folder in "Auto Tab Closer Extension (macOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B6134AF92E5DFBE8000D37C1 /* Auto Tab Closer Extension (macOS) */;
+		};
+		B6134B322E5DFBE8000D37C1 /* Exceptions for "Shared (Extension)" folder in "Auto Tab Closer Extension (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/_locales,
+				Resources/background.js,
+				Resources/content.js,
+				Resources/images,
+				Resources/manifest.json,
+				Resources/popup.css,
+				Resources/popup.html,
+				Resources/popup.js,
+				SafariWebExtensionHandler.swift,
+			);
+			target = B6134AEF2E5DFBE8000D37C1 /* Auto Tab Closer Extension (iOS) */;
+		};
+		B6134B332E5DFBE8000D37C1 /* Exceptions for "Shared (Extension)" folder in "Auto Tab Closer Extension (macOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/_locales,
+				Resources/background.js,
+				Resources/content.js,
+				Resources/images,
+				Resources/manifest.json,
+				Resources/popup.css,
+				Resources/popup.html,
+				Resources/popup.js,
+				SafariWebExtensionHandler.swift,
+			);
+			target = B6134AF92E5DFBE8000D37C1 /* Auto Tab Closer Extension (macOS) */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B6134ABA2E5DFBE7000D37C1 /* Shared (App) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B6134B1F2E5DFBE8000D37C1 /* Exceptions for "Shared (App)" folder in "Auto Tab Closer (iOS)" target */,
+				B6134B292E5DFBE8000D37C1 /* Exceptions for "Shared (App)" folder in "Auto Tab Closer (macOS)" target */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		B6134AC32E5DFBE8000D37C1 /* Shared (Extension) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B6134B322E5DFBE8000D37C1 /* Exceptions for "Shared (Extension)" folder in "Auto Tab Closer Extension (iOS)" target */,
+				B6134B332E5DFBE8000D37C1 /* Exceptions for "Shared (Extension)" folder in "Auto Tab Closer Extension (macOS)" target */,
+			);
+			explicitFolders = (
+				Resources/_locales,
+				Resources/images,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		B6134AD42E5DFBE8000D37C1 /* iOS (App) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B6134B282E5DFBE8000D37C1 /* Exceptions for "iOS (App)" folder in "Auto Tab Closer (iOS)" target */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		B6134AE52E5DFBE8000D37C1 /* macOS (App) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		B6134AF42E5DFBE8000D37C1 /* iOS (Extension) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B6134B232E5DFBE8000D37C1 /* Exceptions for "iOS (Extension)" folder in "Auto Tab Closer Extension (iOS)" target */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		B6134AFE2E5DFBE8000D37C1 /* macOS (Extension) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B6134B2D2E5DFBE8000D37C1 /* Exceptions for "macOS (Extension)" folder in "Auto Tab Closer Extension (macOS)" target */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6134ACF2E5DFBE8000D37C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6134AE12E5DFBE8000D37C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6134AED2E5DFBE8000D37C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6134AF72E5DFBE8000D37C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6134AB52E5DFBE7000D37C1 = {
+			isa = PBXGroup;
+			children = (
+				B6134ABA2E5DFBE7000D37C1 /* Shared (App) */,
+				B6134AC32E5DFBE8000D37C1 /* Shared (Extension) */,
+				B6134AD42E5DFBE8000D37C1 /* iOS (App) */,
+				B6134AE52E5DFBE8000D37C1 /* macOS (App) */,
+				B6134AF42E5DFBE8000D37C1 /* iOS (Extension) */,
+				B6134AFE2E5DFBE8000D37C1 /* macOS (Extension) */,
+				B6134AD32E5DFBE8000D37C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6134AD32E5DFBE8000D37C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6134AD22E5DFBE8000D37C1 /* Auto Tab Closer.app */,
+				B6134AE42E5DFBE8000D37C1 /* Auto Tab Closer.app */,
+				B6134AF02E5DFBE8000D37C1 /* Auto Tab Closer Extension.appex */,
+				B6134AFA2E5DFBE8000D37C1 /* Auto Tab Closer Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6134AD12E5DFBE8000D37C1 /* Auto Tab Closer (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6134B252E5DFBE8000D37C1 /* Build configuration list for PBXNativeTarget "Auto Tab Closer (iOS)" */;
+			buildPhases = (
+				B6134ACE2E5DFBE8000D37C1 /* Sources */,
+				B6134ACF2E5DFBE8000D37C1 /* Frameworks */,
+				B6134AD02E5DFBE8000D37C1 /* Resources */,
+				B6134B242E5DFBE8000D37C1 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6134AF32E5DFBE8000D37C1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B6134AD42E5DFBE8000D37C1 /* iOS (App) */,
+			);
+			name = "Auto Tab Closer (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Auto Tab Closer (iOS)";
+			productReference = B6134AD22E5DFBE8000D37C1 /* Auto Tab Closer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6134AE32E5DFBE8000D37C1 /* Auto Tab Closer (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6134B2F2E5DFBE8000D37C1 /* Build configuration list for PBXNativeTarget "Auto Tab Closer (macOS)" */;
+			buildPhases = (
+				B6134AE02E5DFBE8000D37C1 /* Sources */,
+				B6134AE12E5DFBE8000D37C1 /* Frameworks */,
+				B6134AE22E5DFBE8000D37C1 /* Resources */,
+				B6134B2E2E5DFBE8000D37C1 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6134AFD2E5DFBE8000D37C1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B6134AE52E5DFBE8000D37C1 /* macOS (App) */,
+			);
+			name = "Auto Tab Closer (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Auto Tab Closer (macOS)";
+			productReference = B6134AE42E5DFBE8000D37C1 /* Auto Tab Closer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6134AEF2E5DFBE8000D37C1 /* Auto Tab Closer Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6134B202E5DFBE8000D37C1 /* Build configuration list for PBXNativeTarget "Auto Tab Closer Extension (iOS)" */;
+			buildPhases = (
+				B6134AEC2E5DFBE8000D37C1 /* Sources */,
+				B6134AED2E5DFBE8000D37C1 /* Frameworks */,
+				B6134AEE2E5DFBE8000D37C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B6134AF42E5DFBE8000D37C1 /* iOS (Extension) */,
+			);
+			name = "Auto Tab Closer Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Auto Tab Closer Extension (iOS)";
+			productReference = B6134AF02E5DFBE8000D37C1 /* Auto Tab Closer Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B6134AF92E5DFBE8000D37C1 /* Auto Tab Closer Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6134B2A2E5DFBE8000D37C1 /* Build configuration list for PBXNativeTarget "Auto Tab Closer Extension (macOS)" */;
+			buildPhases = (
+				B6134AF62E5DFBE8000D37C1 /* Sources */,
+				B6134AF72E5DFBE8000D37C1 /* Frameworks */,
+				B6134AF82E5DFBE8000D37C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B6134AFE2E5DFBE8000D37C1 /* macOS (Extension) */,
+			);
+			name = "Auto Tab Closer Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Auto Tab Closer Extension (macOS)";
+			productReference = B6134AFA2E5DFBE8000D37C1 /* Auto Tab Closer Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6134AB62E5DFBE7000D37C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					B6134AD12E5DFBE8000D37C1 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					B6134AE32E5DFBE8000D37C1 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					B6134AEF2E5DFBE8000D37C1 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					B6134AF92E5DFBE8000D37C1 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = B6134AB92E5DFBE7000D37C1 /* Build configuration list for PBXProject "Auto Tab Closer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6134AB52E5DFBE7000D37C1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B6134AD32E5DFBE8000D37C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6134AD12E5DFBE8000D37C1 /* Auto Tab Closer (iOS) */,
+				B6134AE32E5DFBE8000D37C1 /* Auto Tab Closer (macOS) */,
+				B6134AEF2E5DFBE8000D37C1 /* Auto Tab Closer Extension (iOS) */,
+				B6134AF92E5DFBE8000D37C1 /* Auto Tab Closer Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6134AD02E5DFBE8000D37C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6134AE22E5DFBE8000D37C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6134AEE2E5DFBE8000D37C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6134AF82E5DFBE8000D37C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6134ACE2E5DFBE8000D37C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6134AE02E5DFBE8000D37C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6134AEC2E5DFBE8000D37C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6134AF62E5DFBE8000D37C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6134AF32E5DFBE8000D37C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6134AEF2E5DFBE8000D37C1 /* Auto Tab Closer Extension (iOS) */;
+			targetProxy = B6134AF22E5DFBE8000D37C1 /* PBXContainerItemProxy */;
+		};
+		B6134AFD2E5DFBE8000D37C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6134AF92E5DFBE8000D37C1 /* Auto Tab Closer Extension (macOS) */;
+			targetProxy = B6134AFC2E5DFBE8000D37C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B6134B212E5DFBE8000D37C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KR8X94SW38;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Auto Tab Closer Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madebybye.Auto-Tab-Closer.Extension";
+				PRODUCT_NAME = "Auto Tab Closer Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6134B222E5DFBE8000D37C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KR8X94SW38;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Auto Tab Closer Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madebybye.Auto-Tab-Closer.Extension";
+				PRODUCT_NAME = "Auto Tab Closer Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6134B262E5DFBE8000D37C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KR8X94SW38;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Auto Tab Closer";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madebybye.Auto-Tab-Closer";
+				PRODUCT_NAME = "Auto Tab Closer";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6134B272E5DFBE8000D37C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KR8X94SW38;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Auto Tab Closer";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madebybye.Auto-Tab-Closer";
+				PRODUCT_NAME = "Auto Tab Closer";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6134B2B2E5DFBE8000D37C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Auto Tab Closer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KR8X94SW38;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Auto Tab Closer Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madebybye.Auto-Tab-Closer.Extension";
+				PRODUCT_NAME = "Auto Tab Closer Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B6134B2C2E5DFBE8000D37C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Auto Tab Closer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KR8X94SW38;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Auto Tab Closer Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madebybye.Auto-Tab-Closer.Extension";
+				PRODUCT_NAME = "Auto Tab Closer Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B6134B302E5DFBE8000D37C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Auto Tab Closer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KR8X94SW38;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Auto Tab Closer";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madebybye.Auto-Tab-Closer";
+				PRODUCT_NAME = "Auto Tab Closer";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B6134B312E5DFBE8000D37C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Auto Tab Closer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KR8X94SW38;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Auto Tab Closer";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madebybye.Auto-Tab-Closer";
+				PRODUCT_NAME = "Auto Tab Closer";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B6134B342E5DFBE8000D37C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KR8X94SW38;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B6134B352E5DFBE8000D37C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KR8X94SW38;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6134AB92E5DFBE7000D37C1 /* Build configuration list for PBXProject "Auto Tab Closer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6134B342E5DFBE8000D37C1 /* Debug */,
+				B6134B352E5DFBE8000D37C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6134B202E5DFBE8000D37C1 /* Build configuration list for PBXNativeTarget "Auto Tab Closer Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6134B212E5DFBE8000D37C1 /* Debug */,
+				B6134B222E5DFBE8000D37C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6134B252E5DFBE8000D37C1 /* Build configuration list for PBXNativeTarget "Auto Tab Closer (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6134B262E5DFBE8000D37C1 /* Debug */,
+				B6134B272E5DFBE8000D37C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6134B2A2E5DFBE8000D37C1 /* Build configuration list for PBXNativeTarget "Auto Tab Closer Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6134B2B2E5DFBE8000D37C1 /* Debug */,
+				B6134B2C2E5DFBE8000D37C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6134B2F2E5DFBE8000D37C1 /* Build configuration list for PBXNativeTarget "Auto Tab Closer (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6134B302E5DFBE8000D37C1 /* Debug */,
+				B6134B312E5DFBE8000D37C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6134AB62E5DFBE7000D37C1 /* Project object */;
+}
