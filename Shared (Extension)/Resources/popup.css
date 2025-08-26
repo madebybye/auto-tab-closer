@@ -25,7 +25,7 @@ body {
 
 /* Header */
 .header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #8B3C34 0%, #6D2E28 100%);
     color: white;
     padding: 20px;
     text-align: center;
@@ -35,41 +35,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 12px;
 }
 
-.logo .icon {
-    font-size: 24px;
-    margin-right: 8px;
-}
-
-.logo h1 {
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.status {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    font-size: 12px;
-    opacity: 0.9;
-}
-
-.status-value {
-    font-weight: 600;
-    padding: 2px 8px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 12px;
-}
-
-.status-value.enabled {
-    background: rgba(76, 175, 80, 0.3);
-}
-
-.status-value.disabled {
-    background: rgba(244, 67, 54, 0.3);
+.logo-image {
+    height: 24px;
+    width: auto;
 }
 
 /* Main Content */
@@ -77,50 +47,6 @@ body {
     padding: 20px;
 }
 
-.toggle-section {
-    margin-bottom: 24px;
-}
-
-.toggle-label {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    font-weight: 500;
-}
-
-.toggle-slider {
-    position: relative;
-    width: 44px;
-    height: 24px;
-    background: #ccc;
-    border-radius: 12px;
-    margin-right: 12px;
-    transition: background 0.3s;
-}
-
-.toggle-slider:before {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 20px;
-    height: 20px;
-    background: white;
-    border-radius: 50%;
-    transition: transform 0.3s;
-}
-
-#enabledToggle:checked + .toggle-slider {
-    background: #007aff;
-}
-
-#enabledToggle:checked + .toggle-slider:before {
-    transform: translateX(20px);
-}
-
-#enabledToggle {
-    display: none;
-}
 
 /* Settings Section */
 .settings-section {
@@ -158,29 +84,10 @@ body {
 
 .setting-item input[type="number"]:focus {
     outline: none;
-    border-color: #007aff;
-    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+    border-color: #8B3C34;
+    box-shadow: 0 0 0 3px rgba(139, 60, 52, 0.1);
 }
 
-.domain-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.domain-tag {
-    background: #f0f0f0;
-    color: #666;
-    padding: 4px 8px;
-    border-radius: 12px;
-    font-size: 12px;
-    font-weight: 500;
-}
-
-.domain-tag.active {
-    background: #e3f2fd;
-    color: #1976d2;
-}
 
 /* Stats Section */
 .stats-section {
@@ -211,13 +118,96 @@ body {
 
 .stat-value {
     font-weight: 600;
-    color: #007aff;
+    color: #8B3C34;
     font-size: 16px;
+}
+
+/* Toggle Setting Layout */
+.toggle-setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.setting-label {
+    font-weight: 500;
+    color: #555;
+}
+
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle-slider {
+    position: relative;
+    width: 44px;
+    height: 24px;
+    background: #ccc;
+    border-radius: 12px;
+    transition: background 0.3s;
+    flex-shrink: 0;
+    display: block;
+}
+
+.toggle-slider:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+#animationsToggle:checked + .toggle-slider {
+    background: #8B3C34;
+}
+
+#animationsToggle:checked + .toggle-slider:before {
+    transform: translateX(20px);
+}
+
+#animationsToggle {
+    display: none;
 }
 
 /* Actions Section */
 .actions-section {
+    margin-bottom: 24px;
+}
+
+/* Supported Apps Section */
+.supported-apps {
     margin-bottom: 20px;
+}
+
+.supported-apps h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 8px;
+}
+
+.app-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.app-item {
+    background: #e8dbd1;
+    color: #8B3C34;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #c5a88a;
 }
 
 .action-btn {
@@ -233,12 +223,12 @@ body {
 }
 
 .action-btn.primary {
-    background: #007aff;
+    background: #8B3C34;
     color: white;
 }
 
 .action-btn.primary:hover {
-    background: #0056cc;
+    background: #6D2E28;
 }
 
 .action-btn.secondary {
@@ -256,20 +246,10 @@ body {
     padding: 16px 20px;
     border-top: 1px solid #e0e0e0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-size: 12px;
     color: #666;
-}
-
-.links a {
-    color: #007aff;
-    text-decoration: none;
-    margin-left: 12px;
-}
-
-.links a:hover {
-    text-decoration: underline;
 }
 
 /* Responsive adjustments */

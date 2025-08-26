@@ -6,6 +6,7 @@ class AutoTabCloser {
         this.settings = {
             enabled: true,
             countdownSeconds: 6,
+            animationsEnabled: true,
             watchedDomains: {
                 'zoom.us': {
                     patterns: ['*://*.zoom.us/j/*', '*://*.zoom.us/w/*', '*://*.zoom.us/s/*'],
@@ -14,7 +15,8 @@ class AutoTabCloser {
                     deepLinkSchemes: ['zoommtg://']
                 },
                 'figma.com': {
-                    patterns: ['*://*.figma.com/file/*'],
+                    patterns: ['*://*.figma.com/*'],
+                    excludePatterns: ['*://*.figma.com/files/*'],
                     titlePatterns: [/Open in app/i, /Launch.*Figma/i],
                     domMarkers: ['.figma-deep-link', '[data-deep-link]'],
                     deepLinkSchemes: ['figma://']
@@ -46,9 +48,10 @@ class AutoTabCloser {
 
     async init() {
         // Load saved settings
-        const saved = await browser.storage.local.get(['enabled', 'countdownSeconds']);
+        const saved = await browser.storage.local.get(['enabled', 'countdownSeconds', 'animationsEnabled']);
         if (saved.enabled !== undefined) this.settings.enabled = saved.enabled;
         if (saved.countdownSeconds !== undefined) this.settings.countdownSeconds = saved.countdownSeconds;
+        if (saved.animationsEnabled !== undefined) this.settings.animationsEnabled = saved.animationsEnabled;
 
         // Set up event listeners
         this.setupEventListeners();
@@ -109,8 +112,14 @@ class AutoTabCloser {
         const urlMatches = domainConfig.patterns.some(pattern => 
             this.matchesPattern(tab.url, pattern)
         );
+        
+        // Check if URL matches exclude patterns
+        const urlExcluded = domainConfig.excludePatterns && 
+            domainConfig.excludePatterns.some(pattern => 
+                this.matchesPattern(tab.url, pattern)
+            );
 
-        if (urlMatches) {
+        if (urlMatches && !urlExcluded) {
             // Schedule a check after a short delay to allow page to load
             setTimeout(() => {
                 this.scheduleTabCheck(tabId, domain);
@@ -150,13 +159,18 @@ class AutoTabCloser {
         browser.tabs.sendMessage(tabId, {
             action: 'showCountdown',
             seconds: remaining,
-            domain: domain
+            domain: domain,
+            animationsEnabled: this.settings.animationsEnabled
         }).catch(() => {});
 
         const timer = setInterval(() => {
             remaining--;
             
             if (remaining <= 0) {
+                // Clear interval and badge before closing
+                clearInterval(timer);
+                this.activeTabs.delete(tabId);
+                this.updateBadge(tabId, null);
                 this.closeTab(tabId);
                 return;
             }
@@ -167,7 +181,8 @@ class AutoTabCloser {
             // Update content script countdown
             browser.tabs.sendMessage(tabId, {
                 action: 'updateCountdown',
-                seconds: remaining
+                seconds: remaining,
+                animationsEnabled: this.settings.animationsEnabled
             }).catch(() => {});
         }, 1000);
 
@@ -196,6 +211,9 @@ class AutoTabCloser {
 
     async closeTab(tabId) {
         try {
+            // Clear badge before closing tab
+            this.updateBadge(tabId, null);
+            
             await browser.tabs.remove(tabId);
             this.activeTabs.delete(tabId);
             
@@ -246,7 +264,16 @@ class AutoTabCloser {
     }
 
     handleContentScriptMessage(message, sender, sendResponse) {
+        console.log('Auto Tab Closer Background: Received message:', message, 'from tab:', sender.tab.id);
         switch (message.action) {
+            case 'launcherDetected':
+            case 'deepLinkAttempt':
+                // Launcher page detected, start countdown
+                console.log('Auto Tab Closer Background: Starting countdown for tab:', sender.tab.id);
+                this.startAutoCloseCountdown(sender.tab.id, this.getDomainFromTab(sender.tab));
+                sendResponse({ success: true });
+                break;
+
             case 'userInteraction':
                 // User interacted with the page, cancel auto-close
                 this.cancelTabTimer(sender.tab.id);
@@ -291,6 +318,9 @@ class AutoTabCloser {
         if (changes.countdownSeconds) {
             this.settings.countdownSeconds = changes.countdownSeconds.newValue;
         }
+        if (changes.animationsEnabled) {
+            this.settings.animationsEnabled = changes.animationsEnabled.newValue;
+        }
     }
 
     getDomainFromUrl(hostname) {
@@ -300,6 +330,12 @@ class AutoTabCloser {
             }
         }
         return null;
+    }
+
+    getDomainFromTab(tab) {
+        if (!tab.url) return null;
+        const url = new URL(tab.url);
+        return this.getDomainFromUrl(url.hostname);
     }
 
     matchesPattern(url, pattern) {
